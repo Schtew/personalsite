@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom'; // assuming you're using react-router f
 
 const Header = () => {
   return (
-    <header>
+    <header style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
       <nav>
-        <ul>
-          <li>
+        <ul style={{ display: 'flex', justifyContent: 'center', listStyle: 'none' }}>
+          <li style={{ margin: '0 10px' }}>
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className='list'>
             <Link to="/hackathon">Hackathons</Link>
           </li>
-          <li>
+          <li className='list'>
             <Link to="/research">Research</Link>
           </li>
           {/* Add more links as needed */}
