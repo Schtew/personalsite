@@ -1,21 +1,25 @@
 import './App.css';
 // import 'public/foirdlands.jpg';
-import Header from './Header';
-import HackathonsPage from './hackathons';
+import Header from './Components/Header';
+import HackathonsPage from './Components/Hackathon';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import researchPage from './research';
-import Home from './Home';
+import ResearchPage from './Components/research';
+import Home from './Components/Home';
 
 function App() {
   return (
     <Router>
       <div>
-        <Header />
-        <Routes>
-          <Route path="/" element={Home} />
-          <Route path="/hackathons" element={HackathonsPage} />
-          <Route path="/research" element={researchPage} />
-        </Routes>
+        <div className="header">
+          <Header />
+        </div>
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/hackathons" element={<HackathonsPage />} />
+            <Route path="/research" element={<ResearchPage />} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );

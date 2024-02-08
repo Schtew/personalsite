@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardContent, Typography, Grid } from '@material-ui/core';
+import Test from '../test';
 
 const researchPage = () => {
     const research = [
@@ -17,6 +18,7 @@ const researchPage = () => {
     ];
 
     return (
+        <><Test />
         <Grid container spacing={3}>
             {research.map((research, index) => (
                 <Grid item xs={12} sm={6} md={4} key={index}>
@@ -36,6 +38,7 @@ const researchPage = () => {
                 </Grid>
             ))}
         </Grid>
+        </>
     );
 };
 
