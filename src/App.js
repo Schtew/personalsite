@@ -5,6 +5,7 @@ import HackathonsPage from './Components/Hackathon';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ResearchPage from './Components/research';
 import Home from './Components/Home';
+import Typography from '@material-ui/core/Typography';
 
 function App() {
   return (
@@ -20,6 +21,11 @@ function App() {
             <Route path="/research" element={<ResearchPage />} />
           </Routes>
         </div>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Typography variant="body2" style={{ fontFamily: 'Lora', textAlign: 'center' }}>
+              Website written in React, featuring photos from my backpacking adventures.
+            </Typography>
+          </div>
       </div>
     </Router>
   );

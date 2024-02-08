@@ -7,7 +7,7 @@ import { Card, CardContent, Typography } from '@material-ui/core';
 
 const Home = () => {
     return (
-        <div style={{backgroundImage: `url(${fiordlandsImage})`, backgroundSize: 'cover', width: '100%', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+        <div style={{backgroundImage: `url(${fiordlandsImage})`, backgroundSize: 'cover', width: '100%', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column'}}>
             <Card style={{width:'80%' }}>
                 <CardContent style={{display: 'flex', alignItems: 'center'}}>
                     <div style={{width: '30%', height: '30%', borderRadius: '50%', overflow: 'hidden', marginRight: '3rem', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
@@ -23,6 +23,28 @@ const Home = () => {
                     </div>
                 </CardContent>
             </Card>
+            <div style={{display: 'flex', flexDirection: 'row', marginTop: '2rem', width: '80%'}}>
+                <Card style={{marginRight: '1rem', flex: 1}}>
+                    <CardContent>
+                        <Typography variant="h6" component="h3" style={{"font-family": "Lora"}}>
+                            Resume
+                        </Typography>
+                        <Typography color="textSecondary">
+                            Add your resume content here.
+                        </Typography>
+                    </CardContent>
+                </Card>
+                <Card style={{flex: 1}}>
+                    <CardContent>
+                        <Typography variant="h6" component="h3" style={{"font-family": "Lora"}}>
+                            Coding Abilities
+                        </Typography>
+                        <Typography color="textSecondary">
+                            Add your skill meters here.
+                        </Typography>
+                    </CardContent>
+                </Card>
+            </div>
         </div>
     );
 };
