@@ -4,6 +4,7 @@ import Test from '../test';
 import fiordlandsImage from '../fiordlands.jpg';
 import headshot from '../headshot.jpg';
 import { Card, CardContent, Typography } from '@material-ui/core';
+import resume from '../resume.png';
 
 const Home = () => {
     return (
@@ -29,8 +30,10 @@ const Home = () => {
                         <Typography variant="h6" component="h3" style={{"font-family": "Lora"}}>
                             Resume
                         </Typography>
-                        <Typography color="textSecondary">
-                            Add your resume content here.
+                        <Typography color="textSecondary" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                            <a href="https://gtvault-my.sharepoint.com/:b:/g/personal/amelone3_gatech_edu/EcbEdiNaQSFLqiBfSKHXSJgB_9EHSf3nCIa58Puz4HF17A?e=xdy9rg" target="_blank" rel="noopener noreferrer">
+                                <img src={resume} alt="Resume" style={{ maxWidth: '200px', maxHeight: '200px' }} />
+                            </a>
                         </Typography>
                     </CardContent>
                 </Card>
