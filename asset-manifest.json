@@ -1,18 +1,20 @@
 {
   "files": {
     "main.css": "/personalsite/static/css/main.f462d8ed.css",
-    "main.js": "/personalsite/static/js/main.1e6f9673.js",
+    "main.js": "/personalsite/static/js/main.1f871a90.js",
     "static/js/592.3c9fa3d0.chunk.js": "/personalsite/static/js/592.3c9fa3d0.chunk.js",
+    "static/media/basinlakes.jpg": "/personalsite/static/media/basinlakes.743ee8015f554b54b64d.jpg",
     "static/media/fiordlands.jpg": "/personalsite/static/media/fiordlands.cad06ed30ab7051305b6.jpg",
     "static/media/headshot.jpg": "/personalsite/static/media/headshot.8d33752b9ee1a6900767.jpg",
     "static/media/resume.png": "/personalsite/static/media/resume.a3a71a51ff70db35614c.png",
+    "static/media/OctoDashthumbnail.jpg": "/personalsite/static/media/OctoDashthumbnail.abcc2ee7792882146e1b.jpg",
     "index.html": "/personalsite/index.html",
     "main.f462d8ed.css.map": "/personalsite/static/css/main.f462d8ed.css.map",
-    "main.1e6f9673.js.map": "/personalsite/static/js/main.1e6f9673.js.map",
+    "main.1f871a90.js.map": "/personalsite/static/js/main.1f871a90.js.map",
     "592.3c9fa3d0.chunk.js.map": "/personalsite/static/js/592.3c9fa3d0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f462d8ed.css",
-    "static/js/main.1e6f9673.js"
+    "static/js/main.1f871a90.js"
   ]
 }
