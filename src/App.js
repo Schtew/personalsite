@@ -19,6 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/hackathons" element={<HackathonsPage />} />
             <Route path="/research" element={<ResearchPage />} />
+            {/* <Route path="/professional" element={<ResearchPage />} /> */}
           </Routes>
         </div>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>

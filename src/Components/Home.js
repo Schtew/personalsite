@@ -39,7 +39,7 @@ const Home = () => {
                 <Card style={{ flex: 1, width: '70%' }}>
                     <CardContent>
                         <Typography variant="h5" component="h3" style={{ fontFamily: "Lora", textAlign: 'center' }}>
-                            Coding Abilities
+                            Technical Skills
                         </Typography>
                         <div style={{ display: 'flex', justifyContent: 'space-around' }}>
                             <div style={{ width: '30%', height: '100%', display: 'flex', flexDirection: 'column' }}>

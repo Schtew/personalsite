@@ -25,6 +25,10 @@ const Header = () => {
                       <li style={{ margin: '0 1rem', display: 'flex', alignItems: 'center' }}>
                           <Link to="/research" style={{ textDecoration: 'none', color: 'black' }}>Research</Link>
                       </li>
+                      {/* <li style={{ margin: '0 1rem', display: 'flex', alignItems: 'center' }}>|</li>
+                      <li style={{ margin: '0 1rem', display: 'flex', alignItems: 'center' }}>
+                          <Link to="/professional" style={{ textDecoration: 'none', color: 'black' }}>Professional</Link>
+                      </li> */}
                   </ul>
               </nav>
           </header>
