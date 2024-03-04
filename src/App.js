@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import HackathonsPage from './Components/Hackathon';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ResearchPage from './Components/research';
+import ProfessionalPage from './Components/Professional';
 import Home from './Components/Home';
 import Typography from '@material-ui/core/Typography';
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/hackathons" element={<HackathonsPage />} />
             <Route path="/research" element={<ResearchPage />} />
+            <Route path="/professional" element={<ProfessionalPage />} />
           </Routes>
         </div>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
