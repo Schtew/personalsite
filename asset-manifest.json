@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/personalsite/static/css/main.f462d8ed.css",
-    "main.js": "/personalsite/static/js/main.5e870581.js",
-    "static/js/592.3c9fa3d0.chunk.js": "/personalsite/static/js/592.3c9fa3d0.chunk.js",
-    "static/media/basinlakes.jpg": "/personalsite/static/media/basinlakes.743ee8015f554b54b64d.jpg",
-    "static/media/fiordlands.jpg": "/personalsite/static/media/fiordlands.cad06ed30ab7051305b6.jpg",
-    "static/media/fleeke2.jpg": "/personalsite/static/media/fleeke2.023c031ab27eaf3ed2dc.jpg",
-    "static/media/cradlelake.jpg": "/personalsite/static/media/cradlelake.eddb1a6a9f46191d1085.jpg",
-    "static/media/UIST.png": "/personalsite/static/media/UIST.a4dc5f8ea4c42ba3982f.png",
-    "static/media/headshot.jpg": "/personalsite/static/media/headshot.8d33752b9ee1a6900767.jpg",
-    "static/media/resume.png": "/personalsite/static/media/resume.a3a71a51ff70db35614c.png",
-    "static/media/OctoDashthumbnail.jpg": "/personalsite/static/media/OctoDashthumbnail.abcc2ee7792882146e1b.jpg",
-    "static/media/Protrackerthumbnail.jpg": "/personalsite/static/media/Protrackerthumbnail.55b1a4bb25e80d292a65.jpg",
-    "static/media/MRPthumbnail.png": "/personalsite/static/media/MRPthumbnail.f8a2aedfc832376c0835.png",
-    "index.html": "/personalsite/index.html",
-    "main.f462d8ed.css.map": "/personalsite/static/css/main.f462d8ed.css.map",
-    "main.5e870581.js.map": "/personalsite/static/js/main.5e870581.js.map",
-    "592.3c9fa3d0.chunk.js.map": "/personalsite/static/js/592.3c9fa3d0.chunk.js.map"
+    "main.css": "/static/css/main.f462d8ed.css",
+    "main.js": "/static/js/main.12f7ad05.js",
+    "static/js/592.3c9fa3d0.chunk.js": "/static/js/592.3c9fa3d0.chunk.js",
+    "static/media/basinlakes.jpg": "/static/media/basinlakes.743ee8015f554b54b64d.jpg",
+    "static/media/fiordlands.jpg": "/static/media/fiordlands.cad06ed30ab7051305b6.jpg",
+    "static/media/fleeke2.jpg": "/static/media/fleeke2.023c031ab27eaf3ed2dc.jpg",
+    "static/media/cradlelake.jpg": "/static/media/cradlelake.eddb1a6a9f46191d1085.jpg",
+    "static/media/UIST.png": "/static/media/UIST.a4dc5f8ea4c42ba3982f.png",
+    "static/media/headshot.jpg": "/static/media/headshot.8d33752b9ee1a6900767.jpg",
+    "static/media/resume.png": "/static/media/resume.a3a71a51ff70db35614c.png",
+    "static/media/OctoDashthumbnail.jpg": "/static/media/OctoDashthumbnail.abcc2ee7792882146e1b.jpg",
+    "static/media/Protrackerthumbnail.jpg": "/static/media/Protrackerthumbnail.55b1a4bb25e80d292a65.jpg",
+    "static/media/MRPthumbnail.png": "/static/media/MRPthumbnail.f8a2aedfc832376c0835.png",
+    "index.html": "/index.html",
+    "main.f462d8ed.css.map": "/static/css/main.f462d8ed.css.map",
+    "main.12f7ad05.js.map": "/static/js/main.12f7ad05.js.map",
+    "592.3c9fa3d0.chunk.js.map": "/static/js/592.3c9fa3d0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f462d8ed.css",
-    "static/js/main.5e870581.js"
+    "static/js/main.12f7ad05.js"
   ]
 }
