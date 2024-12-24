@@ -1,18 +1,17 @@
 import React from 'react';
-import { Card, CardContent, Typography, CardMedia} from '@material-ui/core';
-import Test from '../test';
+import { Card, CardContent, Typography, CardMedia } from '@material-ui/core';
+import cradlelake from '../Assets/cradlelake.jpg';
 import Excelthumbnail from '../Assets/Excelthumbnail.jpg';
 import uist from '../Assets/UIST.png';
-import cradlelake from '../Assets/cradlelake.jpg';
 
-const researchsPage = () => {
+const ResearchsPage = () => {
     const researchs = [
         {
             title: 'VDAT | Dr. Jennifer Kim',
             image: uist,
             link: 'https://programs.sigchi.org/uist/2023/program/content/126776',
-            description:<ul>
-                <li>Developed a Unity VR application for individuals with ID/DD which simulates real-world job requirements, both socially and professionally, and provides feedback via a web interface.</li>
+            description: <ul>
+                <li>Developed a Unity VR application for individuals with ID/DD which simulates real-world job requirements, both socially and researchally, and provides feedback via a web interface.</li>
                 <li>Coordinating with Korean development team remotely to collaborate on front end data visulization in Vue.</li>
                 <li>Paper published in UIST 2023</li>
                 </ul>,
@@ -21,12 +20,12 @@ const researchsPage = () => {
         {
             title: 'Inclusive Higher Education | Dr. Jennifer Kim',
             image: Excelthumbnail,
-            link:  'https://excel.gatech.edu/home',
+            link: 'https://excel.gatech.edu/home',
             description: <ul>
                 <li>Working with Dr. Kim to develop an AI generative content transformation tool for intellectually disabled students in Georgia Tech's Excel program.</li>
-                <li>Organizing accross multiple domains at Georgia Tech to obtain training data and domain expert advice. </li>
+                <li>Organizing accross multiple domains at Georgia Tech to obtain training data and domain expert advice.</li>
                 </ul>,
-            date: 'January, 2024- Present',
+            date: 'January, 2024 - Present',
         },
         // Add more researchs as needed
     ];
@@ -40,9 +39,10 @@ const researchsPage = () => {
                             <div style={{flexBasis: '30%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '1rem'}}>
                                 <a href={research.link} style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '70%', margin:'1rem'}}>
                                     <CardMedia
+                                        component="img"
                                         image={research.image}
                                         title={research.title}
-                                        style={{width: '100%', height: '100%'}}
+                                        style={{maxHeight: '250px', width: '100%', height: 'auto', objectFit: 'cover'}}
                                     />
                                 </a>
                             </div>
@@ -67,4 +67,4 @@ const researchsPage = () => {
     );
 };
 
-export default researchsPage;
+export default ResearchsPage;

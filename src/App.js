@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography';
 
 function App() {
   return (
-    <Router basename='/personalsite'>
+    <Router basename='/'>
       <div>
         <div className="header">
           <Header />
