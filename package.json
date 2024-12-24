@@ -2,7 +2,7 @@
   "name": "personalsite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://schtew.github.io/personalsite",
+  "homepage":"http://www.aidenmelone.com",
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@testing-library/jest-dom": "^5.17.0",
