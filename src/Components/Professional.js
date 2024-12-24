@@ -36,14 +36,14 @@ const professionsPage = () => {
         <div style={{backgroundImage: `url(${fleeke})`, backgroundSize: 'cover', width: '100%', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: 0, padding: 0}}>
             <div style={{width: '80%', display: 'flex', flexDirection: 'column'}}>
                 {professions.map((profession, index) => (
-                    <div key={index} style={{margin: '1rem', display: 'flex'}}>
-                        <Card style={{display: 'flex', justifyContent: 'space-between', minWidth: "100%"}}>
-                            <div style={{flexBasis: '30%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '1rem'}}>
-                                <a href={profession.link} style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '70%', margin:'1rem'}}>
+                    <div key={index} style={{margin: '1rem', display: 'flex', alignSelf: 'stretch' }}>
+                        <Card style={{display: 'flex', justifyContent: 'space-between', width: "100%"}}>
+                            <div style={{flexBasis: '30%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '1rem', padding: '1rem', paddingRight: '0'}}>
+                                <a href={profession.link} style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', margin:'1rem'}}>
                                     <CardMedia
                                         image={profession.image}
                                         title={profession.title}
-                                        style={{width: '90%', height: '60%'}}
+                                        style={{width: '100%', height: '100%'}}
                                     />
                                 </a>
                             </div>

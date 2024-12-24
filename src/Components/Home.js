@@ -6,9 +6,13 @@ import { Card, CardContent, Typography, LinearProgress } from '@material-ui/core
 import resume from '../Assets/resume.png';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
+import theme from '../theme';
+import { ThemeProvider } from '@material-ui/core/styles';
+import '../App.css';
 
 const Home = () => {
     return (
+        <ThemeProvider theme={theme}>
         <div style={{backgroundImage: `url(${fiordlandsImage})`, backgroundSize: 'cover', width: '100%', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column'}}>
             <Card style={{width:'80%' }}>
                 <CardContent style={{display: 'flex', alignItems: 'center'}}>
@@ -43,92 +47,73 @@ const Home = () => {
                         <Typography variant="h5" component="h3" style={{ fontFamily: "Lora", textAlign: 'center' }}>
                             Technical Skills
                         </Typography>
-                        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-                            <div style={{ display: 'flex', flexDirection: 'column', width: '50%' }}>
-                                <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}>
-                                <Typography variant="h6" component="h3" style={{ fontFamily: "Lora", textAlign: 'center' }}>
-                                    Machine Learning
-                                </Typography>
-                                <List>
-                                    <ListItem>
-                                    <Typography color="textSecondary">Python (NumPy, TensorFlow, PyTorch, Pandas)</Typography>
-                                    </ListItem>
-                                    <ListItem>
-                                    <Typography color="textSecondary">NoSQL (MongoDB, Firebase)</Typography>
-                                    </ListItem>
-                                    <ListItem>
-                                    <Typography color="textSecondary">MySQL</Typography>
-                                    </ListItem>
-                                </List>
-                                </div>
-                                <div style={{ width: '100%' }}>
-                                <Typography variant="h6" component="h3" style={{ fontFamily: "Lora", textAlign: 'center' }}>
-                                    OOP
-                                </Typography>
-                                <List>
-                                    <ListItem>
-                                    <Typography color="textSecondary">Java</Typography>
-                                    </ListItem>
-                                    <ListItem>
-                                    <Typography color="textSecondary">C#</Typography>
-                                    </ListItem>
-                                    <ListItem>
-                                    <Typography color="textSecondary">Kotlin</Typography>
-                                    </ListItem>
-                                </List>
-                                </div>
-                            </div>
-                            <div style={{ display: 'flex', flexDirection: 'column', width: '50%' }}>
-                                <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}>
-                                <Typography variant="h6" component="h3" style={{ fontFamily: "Lora", textAlign: 'center' }}>
-                                    Web Dev
-                                </Typography>
-                                <List>
-                                    <ListItem>
-                                    <Typography color="textSecondary">JavaScript (React, Node.js, Express.js)</Typography>
-                                    </ListItem>
-                                    <ListItem>
-                                    <Typography color="textSecondary">TypeScript (AWS CDK)</Typography>
-                                    </ListItem>
-                                </List>
-                                </div>
-                                <div style={{ width: '100%' }}>
-                                <Typography variant="h6" component="h3" style={{ fontFamily: "Lora", textAlign: 'center' }}>
-                                    Tooling
-                                </Typography>
-                                <List>
-                                    <ListItem>
-                                    <Typography color="textSecondary">Git</Typography>
-                                    </ListItem>
-                                    <ListItem>
-                                    <Typography color="textSecondary">AWS (Lambda, CDK)</Typography>
-                                    </ListItem>
-                                    <ListItem>
-                                    <Typography color="textSecondary">Google Cloud (Maps API, Firebase)</Typography>
-                                    </ListItem>
-                                    <ListItem>
-                                    <Typography color="textSecondary">Postman (RESTful API testing)</Typography>
-                                    </ListItem>
-                                </List>
-                                </div>
-                            </div>
-                            </div>
+                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'left', justifyContent: 'flex-end', width: '100%' }}>
+                        <Typography variant="h6" component="h3" style={{ fontFamily: "Lora"}}>
+                            Machine Learning
+                        </Typography>
+                        <Typography color="textSecondary" className='textSecondaryList'>Python (NumPy, TensorFlow, PyTorch, Pandas), NoSQL (MongoDB, Firebase), MySQL</Typography>
+                        <Typography variant="h6" component="h3" style={{ fontFamily: "Lora"}}>
+                            OOP
+                        </Typography>
+                        <Typography color="textSecondary" className='textSecondaryList'>Java, C#, Kotlin, Python</Typography>
+                        <Typography variant="h6" component="h3" style={{ fontFamily: "Lora"}}>
+                            Web Dev
+                        </Typography>
+                        <Typography color="textSecondary" className='textSecondaryList'>JavaScript (React, Node.js, Express.js), TypeScript (AWS CDK), HTML, CSS, Flask</Typography>
+                        <Typography variant="h6" component="h3" style={{ fontFamily: "Lora" }}>
+                            Tooling
+                        </Typography>
+                        <Typography color="textSecondary" className='textSecondaryList'>Git, AWS (Lambda, CDK), Google Cloud (Maps API, Firebase), Postman (RESTful API testing), Linux (HiveOS)</Typography>
+                        </div>
                     </CardContent>
                 </Card>
                 <Card style={{ width: '20%'}}>
                     <CardContent>
                         <Typography variant="h5" component="h3" style={{"font-family": "Lora", textAlign: 'center'}}>
-                            Relevant Course Work
+                            Course Work
                         </Typography>
-                        <Typography color="textSecondary">
-                            <a href='https://gtvault-my.sharepoint.com/:b:/g/personal/amelone3_gatech_edu/EcbEdiNaQSFLqiBfSKHXSJgBiplYiAXWVHU-UvaMW-WmKA?e=IenWE1'>
-                                <img src={resume} alt="resume" style={{maxWidth: '100%', maxHeight: '100%', objectFit: 'cover'}} />
-                            </a>
-                        </Typography>
+                        <List>
+                            <ListItem>
+                                <Typography color="textSecondary" className='textSecondaryList'>
+                                Machine Learning
+                                </Typography>
+                            </ListItem>
+                            <ListItem>
+                                <Typography color="textSecondary" className='textSecondaryList'>
+                                Deep Learning
+                                </Typography>
+                            </ListItem>
+                            <ListItem>
+                                <Typography color="textSecondary" className='textSecondaryList'>
+                                Artificial Intelligence
+                                </Typography>
+                            </ListItem>
+                            <ListItem>
+                                <Typography color="textSecondary" className='textSecondaryList'>
+                                Data Structures and Algorithms
+                                </Typography>
+                            </ListItem>
+                            <ListItem>
+                                <Typography color="textSecondary" className='textSecondaryList'>
+                                Object-Oriented Programming
+                                </Typography>
+                            </ListItem>
+                            <ListItem>
+                                <Typography color="textSecondary" className='textSecondaryList'>
+                                Human-Computer Interaction
+                                </Typography>
+                            </ListItem>
+                            <ListItem>
+                                <Typography color="textSecondary" className='textSecondaryList'>
+                                Cognitive Science
+                                </Typography>
+                            </ListItem>
+                        </List>
                     </CardContent>
                 </Card>
             </div>
         </div>
+        </ThemeProvider>
     );
 };
 

@@ -37,8 +37,8 @@ const HackathonsPage = () => {
                 {hackathons.map((hackathon, index) => (
                     <div key={index} style={{margin: '1rem', display: 'flex'}}>
                         <Card style={{display: 'flex', justifyContent: 'space-between', minWidth: "100%"}}>
-                            <div style={{flexBasis: '30%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '1rem'}}>
-                                <a href={hackathon.link} style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '70%', margin:'1rem'}}>
+                            <div style={{flexBasis: '30%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '1rem', padding: '1rem', paddingRight: '0'}}>
+                                <a href={hackathon.link} style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', margin:'1rem'}}>
                                     <CardMedia
                                         image={hackathon.image}
                                         title={hackathon.title}
