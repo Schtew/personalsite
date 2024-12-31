@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardContent, Typography, CardMedia } from '@material-ui/core';
+import CardItem from './CardItem';
 import cradlelake from '../Assets/cradlelake.jpg';
 import Excelthumbnail from '../Assets/Excelthumbnail.png';
 import uist from '../Assets/UIST.png';
@@ -35,33 +35,7 @@ const ResearchsPage = () => {
         <div style={{ backgroundImage: `url(${cradlelake})`, backgroundSize: 'cover', width: '100%', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: 0, padding: 0 }}>
             <div style={{ width: '80%', display: 'flex', flexDirection: 'column' }}>
                 {researchs.map((research, index) => (
-                    <div key={index} style={{ margin: '1rem', display: 'flex', alignSelf: 'stretch' }}>
-                        <Card style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
-                            <div style={{ flexBasis: '30%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '1rem', padding: '1rem', paddingRight: '0' }}>
-                                <a href={research.link} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', margin: '1rem'}}>
-                                    <CardMedia
-                                        component="img"
-                                        image={research.image}
-                                        title={research.title}
-                                        style={{maxHeight: '250px', width: '100%', height: 'auto', objectFit: 'cover'}}
-                                    />
-                                </a>
-                            </div>
-                            <div style={{ flexBasis: '70%' }}>
-                                <CardContent>
-                                    <Typography variant="h6" component="h2">
-                                        {research.title}
-                                    </Typography>
-                                    <Typography color="textSecondary" gutterBottom>
-                                        {research.date}
-                                    </Typography>
-                                    <Typography variant="body2" component="p">
-                                        {research.description}
-                                    </Typography>
-                                </CardContent>
-                            </div>
-                        </Card>
-                    </div>
+                    <CardItem key={index} item={research} />
                 ))}
             </div>
         </div>

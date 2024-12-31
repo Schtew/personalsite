@@ -1,11 +1,11 @@
 import './App.css';
 // import 'public/foirdlands.jpg';
 import Header from './Components/Header';
-import HackathonsPage from './Components/Hackathon';
+import HackathonsPage from './Components/HackathonPage';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ResearchPage from './Components/research';
-import ProfessionalPage from './Components/Professional';
-import Home from './Components/Home';
+import ResearchPage from './Components/ResearchPage';
+import ProfessionalPage from './Components/ProfessionalPage';
+import Home from './Components/HomePage';
 import Typography from '@material-ui/core/Typography';
 
 function App() {
