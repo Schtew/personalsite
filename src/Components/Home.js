@@ -16,7 +16,7 @@ const Home = () => {
         <div style={{backgroundImage: `url(${fiordlandsImage})`, backgroundSize: 'cover', width: '100%', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column'}}>
             <Card style={{width:'80%' }}>
                 <CardContent style={{display: 'flex', alignItems: 'center'}}>
-                <div style={{ width: '30%', height: '30%', minWidth: '100px', minHeight: '100px', borderRadius: '50%', overflow: 'hidden', marginRight: '1rem', marginLeft: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <div style={{ width: '30%', height: '30%', minWidth: '150px', minHeight: '150px', borderRadius: '50%', overflow: 'hidden', marginRight: '1rem', marginLeft: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <img src={headshot} alt="Profile" style={{ width: '100%', height: 'auto', maxWidth: '100%', maxHeight: '100%', objectFit: 'cover', borderRadius: '50%' }} />
                 </div>
                     <div>
@@ -24,7 +24,7 @@ const Home = () => {
                             Hello! Welcome to my website.
                         </Typography>
                         <Typography color="textSecondary">
-                            My name is Aiden Melone and I'm a computer science student at Georgia Tech soon graduating with threads in people and intelligence by May 2024. My personal philosophy regarding computer science is that while it's great to understand how to make something, it's just as important to understand who you're making something for- which is why I'm also seeking a minor in psychology.
+                        My name is Aiden Melone. I'm Georgia Tech computer science alumni that specialized in human computer interaction and machine learning. My personal philosophy regarding computer science is that while it's great to understand how to make something, it's just as important to understand who you're making something for. This site is meant to illustrate the technical experiences I have accrued in my adult life against a backdrop of one of my favorite hobbies: backpacking. Send me an email and let's chat! 
                         </Typography>
                     </div>
                 </CardContent>
