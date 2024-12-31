@@ -21,7 +21,6 @@ const ResearchsPage = () => {
             title: 'Inclusive Higher Education | Dr. Jennifer Kim',
             image: Excelthumbnail,
             link: 'https://excel.gatech.edu/home',
-            link: 'https://excel.gatech.edu/home',
             description: <ul>
                 <li>Working with Dr. Kim to develop an AI generative content transformation tool for intellectually disabled students in Georgia Tech's Excel program.</li>
                 <li>Organizing accross multiple domains at Georgia Tech to obtain training data and domain expert advice.</li>
