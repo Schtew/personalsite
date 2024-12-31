@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7aadb992.css",
-    "main.js": "/static/js/main.8928ef14.js",
+    "main.js": "/static/js/main.a4ad798f.js",
     "static/js/592.3c9fa3d0.chunk.js": "/static/js/592.3c9fa3d0.chunk.js",
     "static/media/basinlakes.jpg": "/static/media/basinlakes.743ee8015f554b54b64d.jpg",
     "static/media/fiordlands.jpg": "/static/media/fiordlands.cad06ed30ab7051305b6.jpg",
@@ -16,11 +16,11 @@
     "static/media/MRPthumbnail.png": "/static/media/MRPthumbnail.f6811ef843c9353c3dd4.png",
     "index.html": "/index.html",
     "main.7aadb992.css.map": "/static/css/main.7aadb992.css.map",
-    "main.8928ef14.js.map": "/static/js/main.8928ef14.js.map",
+    "main.a4ad798f.js.map": "/static/js/main.a4ad798f.js.map",
     "592.3c9fa3d0.chunk.js.map": "/static/js/592.3c9fa3d0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7aadb992.css",
-    "static/js/main.8928ef14.js"
+    "static/js/main.a4ad798f.js"
   ]
 }
