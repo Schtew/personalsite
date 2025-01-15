@@ -51,7 +51,7 @@ const Home = () => {
                         <Typography variant="h6" component="h3" style={{ fontFamily: "Lora"}}>
                             Machine Learning
                         </Typography>
-                        <Typography color="textSecondary" className='textSecondaryList'>Python (NumPy, TensorFlow, PyTorch, Pandas), NoSQL (MongoDB, Firebase), MySQL</Typography>
+                        <Typography color="textSecondary" className='textSecondaryList'>Python (NumPy, TensorFlow, PyTorch, LangChain, Hugging Face, Pandas), NoSQL (MongoDB, Firebase), MySQL</Typography>
                         <Typography variant="h6" component="h3" style={{ fontFamily: "Lora"}}>
                             OOP
                         </Typography>
