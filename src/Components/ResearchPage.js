@@ -31,7 +31,16 @@ const ResearchsPage = () => {
     ];
 
     return (
-        <div style={{ backgroundImage: `url(${cradlelake})`, backgroundSize: 'cover', width: '100%', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: 0, padding: 0 }}>
+        <div style={{ 
+            backgroundImage: `url(${cradlelake})`, 
+            backgroundSize: 'cover', 
+            backgroundAttachment: 'fixed',
+            width: '100%', 
+            minHeight: '100vh', 
+            display: 'flex', 
+            alignItems: 'center', 
+            justifyContent: 'center', 
+            margin: 0, padding: 0 }}>
             <div style={{ width: '80%', display: 'flex', flexDirection: 'column' }}>
                 {researchs.map((research, index) => (
                     <CardItem key={index} item={research} />
