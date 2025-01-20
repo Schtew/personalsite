@@ -7,17 +7,6 @@ import uist from '../Assets/UIST.png';
 const ResearchsPage = () => {
     const researchs = [
         {
-            title: 'VDAT | Dr. Jennifer Kim',
-            image: uist,
-            link: 'https://programs.sigchi.org/uist/2023/program/content/126776',
-            description: <ul>
-                <li>Developed a Unity VR application for individuals with ID/DD which simulates real-world job requirements, both socially and professionally, and provides feedback via a web interface.</li>
-                <li>Coordinating with Korean development team remotely to collaborate on front end data visulization in Vue.</li>
-                <li>Paper published in UIST 2023</li>
-            </ul>,
-            date: 'August, 2022 - December, 2022',
-        },
-        {
             title: 'Inclusive Higher Education | Dr. Jennifer Kim',
             image: Excelthumbnail,
             link: 'https://excel.gatech.edu/home',
@@ -27,7 +16,17 @@ const ResearchsPage = () => {
                 </ul>,
             date: 'January, 2024 - Present',
         },
-        // Add more researchs as needed
+        {
+            title: 'VDAT | Dr. Jennifer Kim',
+            image: uist,
+            link: 'https://programs.sigchi.org/uist/2023/program/content/126776',
+            description: <ul>
+                <li>Developed a Unity VR application for individuals with ID/DD which simulates real-world job requirements, both socially and professionally, and provides feedback via a web interface.</li>
+                <li>Coordinating with Korean development team remotely to collaborate on front end data visulization in Vue.</li>
+                <li>Paper published in UIST 2023</li>
+            </ul>,
+            date: 'August, 2022 - December, 2022',
+        }
     ];
 
     return (

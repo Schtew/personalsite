@@ -138,7 +138,7 @@ const Home = () => {
                                     Hello! Welcome to my website.
                                 </Typography>
                                 <Typography color="textSecondary" className={classes.profileText}>
-                                    My name is Aiden Melone. I'm Georgia Tech computer science alumni that specialized in human computer interaction and machine learning. My personal philosophy regarding computer science is that while it's great to understand how to make something, it's just as important to understand who you're making something for. This site is meant to illustrate the technical experiences I have accrued in my adult life against a backdrop of one of my favorite hobbies: backpacking. Send me an email and let's chat!
+                                    My name is Aiden Melone. I'm a Georgia Tech computer science alumni that specialized in human computer interaction and machine learning. My personal philosophy regarding computer science is that while it's great to understand how to make something, it's just as important to understand who you're making something for. This site is meant to illustrate the technical experiences I have accrued in my adult life against a backdrop of one of my favorite hobbies: backpacking. Send me an email and let's chat!
                                 </Typography>
                             </div>
                         </div>
