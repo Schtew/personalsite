@@ -27,13 +27,29 @@ const useStyles = makeStyles((theme) => ({
     mainCard: {
         width: '90%',
         maxWidth: '1200px',
-        marginBottom: theme.spacing(2)
+        marginBottom: theme.spacing(2),
+        display: 'flex',  // Add flex display
+        alignItems: 'center', // Center content vertically
+        justifyContent: 'center', // Center content horizontally
+        [theme.breakpoints.up('md')]: {
+            maxHeight: '200px'
+        }
+    },
+    heading: {
+        fontFamily: "Lora",
+        textAlign: 'center',
+        margin: '0 !important', // Remove default margin
+        marginBottom: `${theme.spacing(1)}px !important` // Add small margin only at bottom
+    },
+    profileText: {
+        margin: '0 !important' // Remove default margin from paragraph text
     },
     profileSection: {
         display: 'flex',
         alignItems: 'center',
         flexDirection: 'column',
         textAlign: 'center',
+        gap: theme.spacing(2),
         [theme.breakpoints.up('md')]: {
             flexDirection: 'row',
             textAlign: 'left'
@@ -46,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
         minHeight: '150px',
         borderRadius: '50%',
         overflow: 'hidden',
-        margin: theme.spacing(2),
+        margin: theme.spacing(1), // Reduced margin here as well
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center'
@@ -121,7 +137,7 @@ const Home = () => {
                                 <Typography variant="h5" component="h2" className={classes.heading}>
                                     Hello! Welcome to my website.
                                 </Typography>
-                                <Typography color="textSecondary">
+                                <Typography color="textSecondary" className={classes.profileText}>
                                     My name is Aiden Melone. I'm Georgia Tech computer science alumni that specialized in human computer interaction and machine learning. My personal philosophy regarding computer science is that while it's great to understand how to make something, it's just as important to understand who you're making something for. This site is meant to illustrate the technical experiences I have accrued in my adult life against a backdrop of one of my favorite hobbies: backpacking. Send me an email and let's chat!
                                 </Typography>
                             </div>
