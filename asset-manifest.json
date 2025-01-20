@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7aadb992.css",
-    "main.js": "/static/js/main.c6db3523.js",
+    "main.css": "/static/css/main.f49df848.css",
+    "main.js": "/static/js/main.2f33ce47.js",
     "static/js/592.3c9fa3d0.chunk.js": "/static/js/592.3c9fa3d0.chunk.js",
     "static/media/basinlakes.jpg": "/static/media/basinlakes.743ee8015f554b54b64d.jpg",
     "static/media/fiordlands.jpg": "/static/media/fiordlands.cad06ed30ab7051305b6.jpg",
@@ -15,12 +15,12 @@
     "static/media/Protrackerthumbnail.jpg": "/static/media/Protrackerthumbnail.55b1a4bb25e80d292a65.jpg",
     "static/media/MRPthumbnail.png": "/static/media/MRPthumbnail.f6811ef843c9353c3dd4.png",
     "index.html": "/index.html",
-    "main.7aadb992.css.map": "/static/css/main.7aadb992.css.map",
-    "main.c6db3523.js.map": "/static/js/main.c6db3523.js.map",
+    "main.f49df848.css.map": "/static/css/main.f49df848.css.map",
+    "main.2f33ce47.js.map": "/static/js/main.2f33ce47.js.map",
     "592.3c9fa3d0.chunk.js.map": "/static/js/592.3c9fa3d0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7aadb992.css",
-    "static/js/main.c6db3523.js"
+    "static/css/main.f49df848.css",
+    "static/js/main.2f33ce47.js"
   ]
 }
