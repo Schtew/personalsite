@@ -138,8 +138,8 @@ const Home = () => {
                                     Hello! Welcome to my website.
                                 </Typography>
                                 <Typography color="textSecondary" className={classes.profileText}>
-                                    My name is Aiden Melone. I'm a Georgia Tech computer science alumni that specialized in human computer interaction and machine learning. My personal philosophy regarding computer science is that while it's great to understand how to make something, it's just as important to understand for whom you are making. This site is meant to illustrate the technical experiences I have accrued in my adult life against a backdrop of one of my favorite hobbies: backpacking. Send me an email and let's chat!
-                                </Typography>
+                                As a Georgia Tech Computer Science graduate specializing in human-computer interaction and machine learning, I've learned that the "how" of technology is only half the equation. The "who"—understanding the people we're building for—is equally crucial. I'm Aiden Melone, and this intersection of technical expertise and human-centered design drives my approach to software development.
+                                This site showcases my professional journey through the lens of one of my greatest passions: backpacking. Want to discuss technology, trails, or anything in between? Send me an email—I'd love to connect!       </Typography>
                             </div>
                         </div>
                     </CardContent>
