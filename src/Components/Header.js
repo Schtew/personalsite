@@ -137,7 +137,9 @@ const Header = () => {
             <div className={classes.header}>
                 {/* Desktop View */}
                 <div className={classes.logoSection}>
-                    <span>Aiden Melone</span>
+                    <Link to="/" className={classes.link}>
+                        <span>Aiden Melone</span>
+                    </Link>
                 </div>
 
                 <div className={classes.navigationSection}>
