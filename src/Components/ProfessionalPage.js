@@ -7,7 +7,7 @@ const ProfessionsPage = () => {
 
     const professions = [
         {
-            title: 'Amazon',
+            title: 'Amazon | Software Development Engineer Intern',
             image: amazon,
             link: 'https://www.amazon.com',
             description: (
@@ -20,7 +20,7 @@ const ProfessionsPage = () => {
             date: 'May, 2022 - August, 2022',
         },
         {
-            title: 'MRP Capital Investment',
+            title: 'MRP Capital Investment | Cryptocurrency Mining Infrastructure Developer',
             image: MRP,
             link: 'https://mrpci.com/',
             description: (
@@ -35,7 +35,17 @@ const ProfessionsPage = () => {
     ];
 
     return (
-        <div style={{ backgroundImage: `url(${fleeke})`, backgroundSize: 'cover', width: '100%', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: 0, padding: 0 }}>
+        <div style={{ 
+            backgroundImage: `url(${fleeke})`, 
+            backgroundSize: 'cover', 
+            backgroundAttachment: 'fixed',
+            width: '100%', 
+            minHeight: '100vh', 
+            display: 'flex', 
+            alignItems: 'center', 
+            justifyContent: 'center', 
+            margin: 0, 
+            padding: 0 }}>
             <div style={{ width: '80%', display: 'flex', flexDirection: 'column' }}>
                 {professions.map((profession, index) => (
                     <CardItem key={index} item={profession} />

@@ -2,7 +2,7 @@ import React from 'react';
 import Test from '../test';
 import fiordlandsImage from '../Assets/fiordlands.jpg';
 import headshot from '../Assets/headshot.jpg';
-import { Card, CardContent, Typography, LinearProgress } from '@material-ui/core';
+import { Card, CardContent, Typography, LinearProgress, makeStyles } from '@material-ui/core';
 import resume from '../Assets/resume.png';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -10,109 +10,215 @@ import theme from '../theme';
 import { ThemeProvider } from '@material-ui/core/styles';
 import '../App.css';
 
+const useStyles = makeStyles((theme) => ({
+    pageContainer: {
+        backgroundImage: `url(${fiordlandsImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+        width: '100%',
+        minHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        padding: theme.spacing(2)
+    },
+    mainCard: {
+        width: '90%',
+        maxWidth: '1200px',
+        marginBottom: theme.spacing(2),
+        display: 'flex',  // Add flex display
+        alignItems: 'center', // Center content vertically
+        justifyContent: 'center', // Center content horizontally
+        [theme.breakpoints.up('md')]: {
+            maxHeight: '200px'
+        }
+    },
+    heading: {
+        fontFamily: "Lora",
+        textAlign: 'center',
+        margin: '0 !important', // Remove default margin
+        marginBottom: `${theme.spacing(1)}px !important` // Add small margin only at bottom
+    },
+    profileText: {
+        margin: '0 !important' // Remove default margin from paragraph text
+    },
+    profileSection: {
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column',
+        textAlign: 'center',
+        gap: theme.spacing(2),
+        [theme.breakpoints.up('md')]: {
+            flexDirection: 'row',
+            textAlign: 'left'
+        }
+    },
+    profileImageContainer: {
+        width: '200px',
+        height: '200px',
+        minWidth: '150px',
+        minHeight: '150px',
+        borderRadius: '50%',
+        overflow: 'hidden',
+        margin: theme.spacing(1), // Reduced margin here as well
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    profileImage: {
+        width: '100%',
+        height: 'auto',
+        maxWidth: '100%',
+        maxHeight: '100%',
+        objectFit: 'cover',
+        borderRadius: '50%'
+    },
+    cardsContainer: {
+        display: 'flex',
+        flexDirection: 'column',
+        width: '90%',
+        maxWidth: '1200px',
+        gap: theme.spacing(2),
+        [theme.breakpoints.up('md')]: {
+            flexDirection: 'row',
+            alignItems: 'stretch'
+        }
+    },
+    resumeCard: {
+        width: '100%',
+        [theme.breakpoints.up('md')]: {
+            width: '20%'
+        }
+    },
+    skillsCard: {
+        width: '100%',
+        [theme.breakpoints.up('md')]: {
+            flex: 1
+        }
+    },
+    courseCard: {
+        width: '100%',
+        [theme.breakpoints.up('md')]: {
+            width: '20%'
+        }
+    },
+    heading: {
+        fontFamily: "Lora",
+        textAlign: 'center'
+    },
+    skillsSection: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'left',
+        justifyContent: 'flex-start',
+        width: '100%'
+    },
+    skillHeading: {
+        fontFamily: "Lora",
+        marginTop: theme.spacing(1)
+    }
+}));
+
 const Home = () => {
+    const classes = useStyles();
+
     return (
         <ThemeProvider theme={theme}>
-        <div style={{backgroundImage: `url(${fiordlandsImage})`, backgroundSize: 'cover', width: '100%', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column'}}>
-            <Card style={{width:'80%' }}>
-                <CardContent style={{display: 'flex', alignItems: 'center'}}>
-                <div style={{ width: '30%', height: '30%', minWidth: '150px', minHeight: '150px', borderRadius: '50%', overflow: 'hidden', marginRight: '1rem', marginLeft: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <img src={headshot} alt="Profile" style={{ width: '100%', height: 'auto', maxWidth: '100%', maxHeight: '100%', objectFit: 'cover', borderRadius: '50%' }} />
-                </div>
-                    <div>
-                        <Typography variant="h5" component="h2" style={{"font-family": "Lora"}}>
-                            Hello! Welcome to my website.
-                        </Typography>
-                        <Typography color="textSecondary">
-                        My name is Aiden Melone. I'm Georgia Tech computer science alumni that specialized in human computer interaction and machine learning. My personal philosophy regarding computer science is that while it's great to understand how to make something, it's just as important to understand who you're making something for. This site is meant to illustrate the technical experiences I have accrued in my adult life against a backdrop of one of my favorite hobbies: backpacking. Send me an email and let's chat! 
-                        </Typography>
-                    </div>
-                </CardContent>
-            </Card>
-            <div style={{display: 'flex', flexDirection: 'row', marginTop: '2rem', width: '80%'}}>
-                <Card style={{marginRight: '1rem', width: '20%'}}>
+            <div className={classes.pageContainer}>
+                <Card className={classes.mainCard}>
                     <CardContent>
-                        <Typography variant="h5" component="h3" style={{"font-family": "Lora", textAlign: 'center'}}>
-                            Resume 
-                        </Typography>
-                        <Typography color="textSecondary">
-                            <a href='https://gtvault-my.sharepoint.com/:b:/g/personal/amelone3_gatech_edu/EcbEdiNaQSFLqiBfSKHXSJgBiplYiAXWVHU-UvaMW-WmKA?e=IenWE1'>
-                                <img src={resume} alt="resume" style={{maxWidth: '100%', maxHeight: '100%', objectFit: 'cover'}} />
-                            </a>
-                        </Typography>
-                    </CardContent>
-                </Card>
-                <Card style={{ flex: 1, width: '40%', marginRight: '1rem' }}>
-                    <CardContent>
-                        <Typography variant="h5" component="h3" style={{ fontFamily: "Lora", textAlign: 'center' }}>
-                            Technical Skills
-                        </Typography>
-                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'left', justifyContent: 'flex-end', width: '100%' }}>
-                        <Typography variant="h6" component="h3" style={{ fontFamily: "Lora"}}>
-                            Machine Learning
-                        </Typography>
-                        <Typography color="textSecondary" className='textSecondaryList'>Python (NumPy, TensorFlow, PyTorch, LangChain, Hugging Face, Pandas), NoSQL (MongoDB, Firebase), MySQL</Typography>
-                        <Typography variant="h6" component="h3" style={{ fontFamily: "Lora"}}>
-                            OOP
-                        </Typography>
-                        <Typography color="textSecondary" className='textSecondaryList'>Java, C#, Kotlin, Python</Typography>
-                        <Typography variant="h6" component="h3" style={{ fontFamily: "Lora"}}>
-                            Web Dev
-                        </Typography>
-                        <Typography color="textSecondary" className='textSecondaryList'>JavaScript (React, Node.js, Express.js), TypeScript (AWS CDK), HTML, CSS, Flask</Typography>
-                        <Typography variant="h6" component="h3" style={{ fontFamily: "Lora" }}>
-                            Tooling
-                        </Typography>
-                        <Typography color="textSecondary" className='textSecondaryList'>Git, AWS (Lambda, CDK), Google Cloud (Maps API, Firebase), Postman (RESTful API testing), Linux (HiveOS)</Typography>
+                        <div className={classes.profileSection}>
+                            <div className={classes.profileImageContainer}>
+                                <img src={headshot} alt="Profile" className={classes.profileImage} />
+                            </div>
+                            <div>
+                                <Typography variant="h5" component="h2" className={classes.heading}>
+                                    Hello! Welcome to my website.
+                                </Typography>
+                                <Typography color="textSecondary" className={classes.profileText}>
+                                As a Georgia Tech Computer Science graduate specializing in human-computer interaction and machine learning, I've learned that the "how" of technology is only half the equation. The "who"—understanding the people we're building for—is equally crucial. I'm Aiden Melone, and this intersection of technical expertise and human-centered design drives my approach to software development.
+                                This site showcases my professional journey through the lens of one of my greatest passions: backpacking. Want to discuss technology, trails, or anything in between? Send me an email—I'd love to connect!       </Typography>
+                            </div>
                         </div>
                     </CardContent>
                 </Card>
-                <Card style={{ width: '20%'}}>
-                    <CardContent>
-                        <Typography variant="h5" component="h3" style={{"font-family": "Lora", textAlign: 'center'}}>
-                            Course Work
-                        </Typography>
-                        <List>
-                            <ListItem>
-                                <Typography color="textSecondary" className='textSecondaryList'>
-                                Machine Learning
+
+                <div className={classes.cardsContainer}>
+                    <Card className={classes.resumeCard}>
+                        <CardContent>
+                            <Typography variant="h5" component="h3" className={classes.heading}>
+                                Resume
+                            </Typography>
+                            <Typography color="textSecondary">
+                                <a href='/Resume - Aiden Melone.pdf'download='Resume - Aiden Melone.pdf'>
+                                    <img src={resume} alt="resume" style={{ width: '100%', height: 'auto' }} />
+                                </a>
+                            </Typography>
+                        </CardContent>
+                    </Card>
+
+                    <Card className={classes.skillsCard}>
+                        <CardContent>
+                            <Typography variant="h5" component="h3" className={classes.heading}>
+                                Technical Skills
+                            </Typography>
+                            <div className={classes.skillsSection}>
+                                <Typography variant="h6" component="h3" className={classes.skillHeading}>
+                                    Machine Learning
                                 </Typography>
-                            </ListItem>
-                            <ListItem>
                                 <Typography color="textSecondary" className='textSecondaryList'>
-                                Deep Learning
+                                    Python (NumPy, TensorFlow, PyTorch, LangChain, Hugging Face, Pandas), NoSQL (MongoDB, Firebase), MySQL
                                 </Typography>
-                            </ListItem>
-                            <ListItem>
+                                <Typography variant="h6" component="h3" className={classes.skillHeading}>
+                                    OOP
+                                </Typography>
                                 <Typography color="textSecondary" className='textSecondaryList'>
-                                Artificial Intelligence
+                                    Java, C#, Kotlin, Python
                                 </Typography>
-                            </ListItem>
-                            <ListItem>
+                                <Typography variant="h6" component="h3" className={classes.skillHeading}>
+                                    Web Dev
+                                </Typography>
                                 <Typography color="textSecondary" className='textSecondaryList'>
-                                Data Structures and Algorithms
+                                    JavaScript (React, Node.js, Express.js), TypeScript (AWS CDK), HTML, CSS, Flask
                                 </Typography>
-                            </ListItem>
-                            <ListItem>
+                                <Typography variant="h6" component="h3" className={classes.skillHeading}>
+                                    Tooling
+                                </Typography>
                                 <Typography color="textSecondary" className='textSecondaryList'>
-                                Object-Oriented Programming
+                                    Git, AWS (Lambda, CDK), Google Cloud (Maps API, Firebase), Postman (RESTful API testing), Linux (HiveOS)
                                 </Typography>
-                            </ListItem>
-                            <ListItem>
-                                <Typography color="textSecondary" className='textSecondaryList'>
-                                Human-Computer Interaction
-                                </Typography>
-                            </ListItem>
-                            <ListItem>
-                                <Typography color="textSecondary" className='textSecondaryList'>
-                                Cognitive Science
-                                </Typography>
-                            </ListItem>
-                        </List>
-                    </CardContent>
-                </Card>
+                            </div>
+                        </CardContent>
+                    </Card>
+
+                    <Card className={classes.courseCard}>
+                        <CardContent>
+                            <Typography variant="h5" component="h3" className={classes.heading}>
+                                Course Work
+                            </Typography>
+                            <List text-align='center'> 
+                                {[
+                                    'Machine Learning',
+                                    'Deep Learning',
+                                    'Artificial Intelligence',
+                                    'Data Structures and Algorithms',
+                                    'Object-Oriented Programming',
+                                    'Human-Computer Interaction',
+                                    'Cognitive Science'
+                                ].map((course) => (
+                                    <ListItem key={course}>
+                                        <Typography color="textSecondary">
+                                            {course}
+                                        </Typography>
+                                    </ListItem>
+                                ))}
+                            </List>
+                        </CardContent>
+                    </Card>
+                </div>
             </div>
-        </div>
         </ThemeProvider>
     );
 };
