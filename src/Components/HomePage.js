@@ -152,7 +152,7 @@ const Home = () => {
                                 Resume
                             </Typography>
                             <Typography color="textSecondary">
-                                <a href='https://gtvault-my.sharepoint.com/:b:/g/personal/amelone3_gatech_edu/EcbEdiNaQSFLqiBfSKHXSJgBiplYiAXWVHU-UvaMW-WmKA?e=IenWE1'>
+                                <a href='/Resume - Aiden Melone.pdf'download='Resume - Aiden Melone.pdf'>
                                     <img src={resume} alt="resume" style={{ width: '100%', height: 'auto' }} />
                                 </a>
                             </Typography>
