@@ -26,7 +26,7 @@ const ProfessionsPage = () => {
             description: (
                 <ul>
                     <li>Developed cryptocurrency (Ethereum) mining infrastructure for a local capital investment firm.</li>
-                    <li>Managed tens of thousands of dollars in infrastructure, becoming responsible for the whole of 1.5GHz mining operation.</li>
+                    <li>Managed tens of thousands of dollars in infrastructure, becoming responsible for the whole of 1.5GH/s mining operation.</li>
                 </ul>
             ),
             date: 'April 2021 - December 2022',
