@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.f49df848.css",
-    "main.js": "/static/js/main.0ea33bad.js",
-    "static/js/592.3c9fa3d0.chunk.js": "/static/js/592.3c9fa3d0.chunk.js",
+    "main.js": "/static/js/main.eb0cf394.js",
+    "static/js/453.1581f2a8.chunk.js": "/static/js/453.1581f2a8.chunk.js",
     "static/media/basinlakes.jpg": "/static/media/basinlakes.743ee8015f554b54b64d.jpg",
     "static/media/fiordlands.jpg": "/static/media/fiordlands.cad06ed30ab7051305b6.jpg",
     "static/media/fleeke2.jpg": "/static/media/fleeke2.023c031ab27eaf3ed2dc.jpg",
     "static/media/cradlelake.jpg": "/static/media/cradlelake.eddb1a6a9f46191d1085.jpg",
     "static/media/headshot.jpg": "/static/media/headshot.856ba31d1bc3fd5e1356.jpg",
     "static/media/UIST.png": "/static/media/UIST.bd6bdf17b08739c6e010.png",
+    "static/media/saleo.png": "/static/media/saleo.8287d2d31bce2b5d1ace.png",
     "static/media/OctoDashthumbnail.jpg": "/static/media/OctoDashthumbnail.abcc2ee7792882146e1b.jpg",
     "static/media/resume.png": "/static/media/resume.f4dda4e3c757d14ace45.png",
     "static/media/Excelthumbnail.png": "/static/media/Excelthumbnail.38c45da02c16952ba60b.png",
@@ -16,11 +17,11 @@
     "static/media/MRPthumbnail.png": "/static/media/MRPthumbnail.f6811ef843c9353c3dd4.png",
     "index.html": "/index.html",
     "main.f49df848.css.map": "/static/css/main.f49df848.css.map",
-    "main.0ea33bad.js.map": "/static/js/main.0ea33bad.js.map",
-    "592.3c9fa3d0.chunk.js.map": "/static/js/592.3c9fa3d0.chunk.js.map"
+    "main.eb0cf394.js.map": "/static/js/main.eb0cf394.js.map",
+    "453.1581f2a8.chunk.js.map": "/static/js/453.1581f2a8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f49df848.css",
-    "static/js/main.0ea33bad.js"
+    "static/js/main.eb0cf394.js"
   ]
 }
