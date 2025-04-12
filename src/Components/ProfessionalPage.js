@@ -2,10 +2,23 @@ import CardItem from './CardItem';
 import amazon from '../Assets/amazon.png';
 import fleeke from '../Assets/fleeke2.jpg';
 import MRP from '../Assets/MRPthumbnail.png';
+import Saleo from '../Assets/saleo.png'
 
 const ProfessionsPage = () => {
 
     const professions = [
+        {
+            title: 'Saleo | Machine Learning Engineer',
+            image: Saleo,
+            description: (
+                <ul>
+                    <li>Developed, benchmarked, and deployed RAG models for internal code generation.</li>
+                    <li>Designed data ingestion pipeline for gathering context.</li>
+                    <li>Technologies Involved: Python, HuggingFace, Langchain, AWS Sagemaker, S3, Lambda</li>
+                </ul>
+            ),
+            date: 'March 2025 - Present'
+        },
         {
             title: 'Amazon | Software Development Engineer Intern',
             image: amazon,
@@ -30,8 +43,7 @@ const ProfessionsPage = () => {
                 </ul>
             ),
             date: 'April 2021 - December 2022',
-        },
-        // Add more professions as needed
+        }
     ];
 
     return (
