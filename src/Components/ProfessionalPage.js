@@ -12,9 +12,9 @@ const ProfessionsPage = () => {
             image: Saleo,
             description: (
                 <ul>
-                    <li>Developed, benchmarked, and deployed RAG models for internal code generation.</li>
-                    <li>Designed data ingestion pipeline for gathering context.</li>
-                    <li>Technologies Involved: Python, HuggingFace, Langchain, AWS Sagemaker, S3, Lambda</li>
+                    <li>Led R&D efforts in RAG model development for code generation, with an average return of 15% higher semantic quality over naïve generation</li>
+                    <li>Developed end-to-end data pipeline, model infrastructure, and benchmarking suite for model testing and deployment.</li>
+                    <li>Technologies Involved: AWS Sagemaker, Huggingface, Langchain, OpenAI API, Typescript, Python.</li>
                 </ul>
             ),
             date: 'March 2025 - Present'
