@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.f49df848.css",
-    "main.js": "/static/js/main.f97e8a07.js",
-    "static/js/453.1581f2a8.chunk.js": "/static/js/453.1581f2a8.chunk.js",
+    "main.js": "/static/js/main.b6f11b08.js",
+    "static/js/592.3c9fa3d0.chunk.js": "/static/js/592.3c9fa3d0.chunk.js",
     "static/media/basinlakes.jpg": "/static/media/basinlakes.743ee8015f554b54b64d.jpg",
     "static/media/fiordlands.jpg": "/static/media/fiordlands.cad06ed30ab7051305b6.jpg",
     "static/media/fleeke2.jpg": "/static/media/fleeke2.023c031ab27eaf3ed2dc.jpg",
@@ -17,11 +17,11 @@
     "static/media/MRPthumbnail.png": "/static/media/MRPthumbnail.f6811ef843c9353c3dd4.png",
     "index.html": "/index.html",
     "main.f49df848.css.map": "/static/css/main.f49df848.css.map",
-    "main.f97e8a07.js.map": "/static/js/main.f97e8a07.js.map",
-    "453.1581f2a8.chunk.js.map": "/static/js/453.1581f2a8.chunk.js.map"
+    "main.b6f11b08.js.map": "/static/js/main.b6f11b08.js.map",
+    "592.3c9fa3d0.chunk.js.map": "/static/js/592.3c9fa3d0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f49df848.css",
-    "static/js/main.f97e8a07.js"
+    "static/js/main.b6f11b08.js"
   ]
 }
