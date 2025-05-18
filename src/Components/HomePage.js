@@ -138,8 +138,8 @@ const Home = () => {
                                     Hello! Welcome to my website.
                                 </Typography>
                                 <Typography color="textSecondary" className={classes.profileText}>
-                                As a Georgia Tech Computer Science graduate specializing in human-computer interaction and machine learning, I've learned that the "how" of technology is only half the equation. The "who"—understanding the people we're building for—is equally crucial. I'm Aiden Melone, and this intersection of technical expertise and human-centered design drives my approach to software development.
-                                This site showcases my professional journey through the lens of one of my greatest passions: backpacking. Want to discuss technology, trails, or anything in between? Send me an email—I'd love to connect!       </Typography>
+                                As a Georgia Tech Computer Science graduate specializing in human-computer interaction and machine learning, I've learned that the "how" of technology is only half the equation. The "who"-understanding the people we're building for-is equally crucial. I'm Aiden Melone, and this intersection of technical expertise and human-centered design drives my approach to software development.
+                                This site showcases my professional journey through the lens of one of my greatest passions: backpacking. Want to discuss technology, trails, or anything in between? Send me an email-I'd love to connect!       </Typography>
                             </div>
                         </div>
                     </CardContent>
