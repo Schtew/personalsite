@@ -8,7 +8,7 @@ const ProfessionsPage = () => {
 
     const professions = [
         {
-            title: 'Saleo | Machine Learning Engineer',
+            title: 'Saleo | Machine Learning Engineer Contractor',
             image: Saleo,
             description: (
                 <ul>
