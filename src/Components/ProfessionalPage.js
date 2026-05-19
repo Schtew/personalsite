@@ -12,9 +12,9 @@ const ProfessionsPage = () => {
             image: Saleo,
             description: (
                 <ul>
+                    <li>Led innovation team to develop internal AI based agentic applications to automate development and bug fixing workflows.</li>
                     <li>Led R&D efforts in RAG model development for code generation, with an average return of 15% higher semantic quality over naïve generation</li>
-                    <li>Developed end-to-end data pipeline, model infrastructure, and benchmarking suite for model testing and deployment.</li>
-                    <li>Technologies Involved: AWS Sagemaker, Huggingface, Langchain, OpenAI API, Typescript, Python.</li>
+                    <li>Languages/Technologies Involved: Typescript, Python, React, AWS Terraform (Sagemaker, ECs, Dynamo, etc.), Docker, Huggingface, MCP</li>
                 </ul>
             ),
             date: 'March 2025 - Present'
