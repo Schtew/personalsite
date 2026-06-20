@@ -127,9 +127,9 @@ const Header = () => {
 
     const navItems = [
         { path: '/', label: 'Home' },
-        { path: '/hackathons', label: 'Hackathons' },
+        { path: '/professional', label: 'Professional' },
         { path: '/research', label: 'Research' },
-        { path: '/professional', label: 'Professional' }
+        { path: '/hackathons', label: 'Hackathons' },
     ];
 
     return (
