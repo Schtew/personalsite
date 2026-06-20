@@ -1,7 +1,7 @@
 import React from 'react';
 import Test from '../test';
 import fiordlandsImage from '../Assets/fiordlands.jpg';
-import headshot from '../Assets/headshot.jpg';
+import headshot from '../Assets/IMG_8980.JPEG';
 import { Card, CardContent, Typography, LinearProgress, makeStyles } from '@material-ui/core';
 import resume from '../Assets/resume.png';
 import List from '@material-ui/core/List';
@@ -18,22 +18,18 @@ const useStyles = makeStyles((theme) => ({
         backgroundAttachment: 'fixed',
         width: '100%',
         minHeight: '100vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        flexDirection: 'column',
+        display: 'grid',
+        gridTemplateColumns: '1fr',
+        gridAutoRows: 'auto',
+        justifyItems: 'center',
+        alignContent: 'start',
+        gap: theme.spacing(2),
         padding: theme.spacing(2)
     },
     mainCard: {
         width: '90%',
         maxWidth: '1200px',
-        marginBottom: theme.spacing(2),
-        display: 'flex',  // Add flex display
-        alignItems: 'center', // Center content vertically
-        justifyContent: 'center', // Center content horizontally
-        [theme.breakpoints.up('md')]: {
-            maxHeight: '200px'
-        }
+        justifySelf: 'center'
     },
     heading: {
         fontFamily: "Lora",
@@ -42,16 +38,18 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: `${theme.spacing(1)}px !important` // Add small margin only at bottom
     },
     profileText: {
-        margin: '0 !important' // Remove default margin from paragraph text
+        margin: '0 !important', // Remove default margin from paragraph text
+        whiteSpace: 'pre-line'
     },
     profileSection: {
-        display: 'flex',
+        display: 'grid',
+        gridTemplateColumns: '1fr',
         alignItems: 'center',
-        flexDirection: 'column',
+        justifyItems: 'center',
         textAlign: 'center',
         gap: theme.spacing(2),
         [theme.breakpoints.up('md')]: {
-            flexDirection: 'row',
+            gridTemplateColumns: '220px 1fr',
             textAlign: 'left'
         }
     },
@@ -76,37 +74,23 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: '50%'
     },
     cardsContainer: {
-        display: 'flex',
-        flexDirection: 'column',
+        display: 'grid',
+        gridTemplateColumns: '1fr',
         width: '90%',
         maxWidth: '1200px',
         gap: theme.spacing(2),
         [theme.breakpoints.up('md')]: {
-            flexDirection: 'row',
-            alignItems: 'stretch'
+            gridTemplateColumns: 'minmax(180px, 0.9fr) minmax(0, 1.6fr) minmax(180px, 0.9fr)'
         }
     },
     resumeCard: {
-        width: '100%',
-        [theme.breakpoints.up('md')]: {
-            width: '20%'
-        }
+        width: '100%'
     },
     skillsCard: {
-        width: '100%',
-        [theme.breakpoints.up('md')]: {
-            flex: 1
-        }
+        width: '100%'
     },
     courseCard: {
-        width: '100%',
-        [theme.breakpoints.up('md')]: {
-            width: '20%'
-        }
-    },
-    heading: {
-        fontFamily: "Lora",
-        textAlign: 'center'
+        width: '100%'
     },
     skillsSection: {
         display: 'flex',
@@ -135,11 +119,17 @@ const Home = () => {
                             </div>
                             <div>
                                 <Typography variant="h5" component="h2" className={classes.heading}>
-                                    Hello! Welcome to my website.
+                                    Hey, I'm Aiden Melone.
                                 </Typography>
-                                <Typography color="textSecondary" className={classes.profileText}>
-                                As a Georgia Tech Computer Science graduate specializing in human-computer interaction and machine learning, I've learned that the "how" of technology is only half the equation. The "who"-understanding the people we're building for-is equally crucial. I'm Aiden Melone, and this intersection of technical expertise and human-centered design drives my approach to software development.
-                                This site showcases my professional journey through the lens of one of my greatest passions: backpacking. Want to discuss technology, trails, or anything in between? Send me an email-I'd love to connect!       </Typography>
+                                <Typography color="textSecondary" sx={{whiteSpace: 'pre-line'}} className={classes.profileText}>
+                                    {`I’m a Georgia Tech Computer Science graduate and full-stack engineer working at the intersection of AI, developer tooling, and human computer interaction.
+
+                                    My recent work has focused on building agentic internal systems that improve engineering efficiency, QA coverage, and deployment reliability. At Saleo, I’ve helped develop autonomous tooling that identifies and resolves bugs before they become production issues, as well as RAG-based code-generation systems designed to improve developer effectiveness.
+
+                                    I studied computer science with a psychology minor because I believe great software depends on both sides of the equation: understanding how to build complex systems, and understanding the people who rely on them. My research experience at Georgia Tech explored that same intersection, using generative technology to make higher education more accessible for individuals with cognitive disabilities.
+
+                                    Outside of engineering, I’m a PCT thru-hiker (class of 2024!), avid rock climber, and international adventurer. I’m drawn to hard problems, unfamiliar environments, and challenges that require persistence, creativity, and constant learning.`}
+                                </Typography>
                             </div>
                         </div>
                     </CardContent>
