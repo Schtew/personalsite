@@ -1,8 +1,6 @@
-import React from 'react';
-import Test from '../test';
 import fiordlandsImage from '../Assets/fiordlands.jpg';
 import headshot from '../Assets/IMG_8980.JPEG';
-import { Card, CardContent, Typography, LinearProgress, makeStyles } from '@material-ui/core';
+import { Card, CardContent, Typography, makeStyles } from '@material-ui/core';
 import resume from '../Assets/resume.png';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
