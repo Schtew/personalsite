@@ -93,7 +93,7 @@ const CardItem = ({ item }) => {
                         <Typography color="textSecondary" gutterBottom>
                             {item.date}
                         </Typography>
-                        <Typography variant="body2" component="p">
+                        <Typography variant="body1" component="p">
                             {item.description}
                         </Typography>
                     </CardContent>
