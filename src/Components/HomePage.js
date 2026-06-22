@@ -30,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
     gap: theme.spacing(2),
     padding: theme.spacing(2),
   },
-
   hiddenContent: {
     opacity: 0,
     transform: "scale(0.985)",
@@ -45,42 +44,47 @@ const useStyles = makeStyles((theme) => ({
   heading: {
     fontFamily: "Lora",
     textAlign: "center",
-    margin: "0 !important", // Remove default margin
-    marginBottom: `${theme.spacing(1)}px !important`, // Add small margin only at bottom
+    margin: "0 !important",
+    marginBottom: `${theme.spacing(1)}px !important`,
   },
   profileText: {
-    margin: "0 !important", // Remove default margin from paragraph text
+    margin: "0 !important",
     whiteSpace: "pre-line",
+    textAlign: "left",
   },
   profileSection: {
     display: "grid",
     gridTemplateColumns: "1fr",
-    alignItems: "center",
+    gridTemplateRows: "auto auto",
     justifyItems: "center",
     textAlign: "center",
     gap: theme.spacing(2),
-    [theme.breakpoints.up("md")]: {
-      gridTemplateColumns: "220px 1fr",
-      textAlign: "left",
+    width: "100%",
+  },
+  profileRow: {
+    display: "grid",
+    gridTemplateColumns: "220px 1fr",
+    gap: theme.spacing(3),
+    alignItems: "center",
+    width: "100%",
+    [theme.breakpoints.down("sm")]: {
+      gridTemplateColumns: "1fr",
+      justifyItems: "center",
+      textAlign: "center",
     },
   },
   profileImageContainer: {
-    width: "200px",
-    height: "200px",
-    minWidth: "150px",
-    minHeight: "150px",
+    width: "220px",
+    height: "220px",
     borderRadius: "50%",
     overflow: "hidden",
-    margin: theme.spacing(1), // Reduced margin here as well
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
   },
   profileImage: {
     width: "100%",
-    height: "auto",
-    maxWidth: "100%",
-    maxHeight: "100%",
+    height: "100%",
     objectFit: "cover",
     borderRadius: "50%",
   },
@@ -129,30 +133,27 @@ const Home = ({ isHovered }) => {
           <Card className={classes.mainCard}>
             <CardContent>
               <div className={classes.profileSection}>
-                <div className={classes.profileImageContainer}>
-                  <img
-                    src={headshot}
-                    alt="Profile"
-                    className={classes.profileImage}
-                  />
-                </div>
-                <div>
-                  <Typography
-                    variant="h5"
-                    component="h2"
-                    className={classes.heading}
-                  >
-                    Hey, I'm Aiden Melone.
-                  </Typography>
-                  <Typography
-                    sx={{ whiteSpace: "pre-line" }}
-                    className={classes.profileText}
-                  >
-                    {`I’m a Georgia Tech Computer Science graduate and full-stack engineer working at the intersection of AI, developer tooling, and human computer interaction.
+                <Typography
+                  variant="h5"
+                  component="h2"
+                  className={classes.heading}
+                >
+                  Hey, I'm Aiden Melone.
+                </Typography>
+                <div className={classes.profileRow}>
+                  <div className={classes.profileImageContainer}>
+                    <img
+                      src={headshot}
+                      alt="Profile"
+                      className={classes.profileImage}
+                    />
+                  </div>
+                  <Typography className={classes.profileText}>
+                    {`I'm a Georgia Tech Computer Science graduate and full-stack engineer working at the intersection of AI, developer tooling, and human computer interaction.
 
                                     My recent work has focused on building agentic internal systems that improve engineering efficiency, QA coverage, and deployment reliability. At Saleo, I’ve helped develop autonomous tooling that identifies and resolves bugs before they become production issues, as well as RAG-based code-generation systems designed to improve developer effectiveness.
 
-                                    I studied computer science with a psychology minor because I believe great software depends on both sides of the equation: understanding how to build complex systems, and understanding the people who rely on them. My research experience at Georgia Tech explored that same intersection, using generative technology to make higher education more accessible for individuals with cognitive disabilities.
+I studied computer science with a psychology minor because I believe great software depends on both sides of the equation: understanding how to build complex systems, and understanding the people who rely on them. My research experience at Georgia Tech explored that same intersection, using generative technology to make higher education more accessible for individuals with cognitive disabilities.
 
                                     Outside of engineering, I’m a PCT thru-hiker (class of 2024!), avid rock climber, and international adventurer. I’m drawn to hard problems, unfamiliar environments, and challenges that require persistence, creativity, and constant learning.`}
                   </Typography>
