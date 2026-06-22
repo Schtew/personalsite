@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
-  FaImage,
   FaLinkedin,
   FaEnvelopeOpen,
   FaBars,
   FaTimes,
+  FaRegImages,
 } from "react-icons/fa";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     padding: "0 1rem",
+    gap: "20px",
     "@media (max-width: 768px)": {
       width: "auto",
     },
@@ -146,6 +147,13 @@ const Header = ({ setIsHovered }) => {
           <Link to="/" className={classes.link}>
             <span>Aiden Melone</span>
           </Link>
+          <div
+            className={classes.imageIcon}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <FaRegImages size={24} />
+          </div>
         </div>
 
         <div className={classes.navigationSection}>
@@ -176,13 +184,7 @@ const Header = ({ setIsHovered }) => {
             {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
           {/* Desktop social icons */}
-          <div
-            className={classes.imageIcon}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            <FaImage size={24} />
-          </div>
+
           <div className={classes.socialIcon}>
             <a
               href="https://www.linkedin.com/in/aiden-melone/"
