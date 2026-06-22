@@ -44,13 +44,12 @@ const useStyles = makeStyles((theme) => ({
   heading: {
     fontFamily: "Lora",
     textAlign: "center",
-    margin: "0 !important",
-    marginBottom: `${theme.spacing(1)}px !important`,
   },
   profileText: {
     margin: "0 !important",
     whiteSpace: "pre-line",
     textAlign: "left",
+    lineHeight: 1.05,
   },
   profileSection: {
     display: "grid",
@@ -107,6 +106,7 @@ const useStyles = makeStyles((theme) => ({
   },
   courseCard: {
     width: "100%",
+    alignItems: "center",
   },
   skillsSection: {
     display: "flex",
@@ -151,9 +151,9 @@ const Home = ({ isHovered }) => {
                   <Typography className={classes.profileText}>
                     {`I'm a Georgia Tech Computer Science graduate and full-stack engineer working at the intersection of AI, developer tooling, and human computer interaction.
 
-                                    My recent work has focused on building agentic internal systems that improve engineering efficiency, QA coverage, and deployment reliability. At Saleo, I’ve helped develop autonomous tooling that identifies and resolves bugs before they become production issues, as well as RAG-based code-generation systems designed to improve developer effectiveness.
+                                    My recent work has focused on building agentic internal systems that improve engineering efficiency, QA coverage, and deployment reliability. At Saleo, I’ve developed autonomous tooling that identifies and resolves bugs before they become production issues, as well as RAG-based code-generation systems that enhance developer productivity.
 
-I studied computer science with a psychology minor because I believe great software depends on both sides of the equation: understanding how to build complex systems, and understanding the people who rely on them. My research experience at Georgia Tech explored that same intersection, using generative technology to make higher education more accessible for individuals with cognitive disabilities.
+                                    I studied computer science with a psychology minor because I believe great software depends on both sides of the equation: understanding how to build complex systems, and understanding the people who rely on them. My research experience at Georgia Tech explored that same intersection, using generative technology to make higher education more accessible for individuals with cognitive disabilities.
 
                                     Outside of engineering, I’m a PCT thru-hiker (class of 2024!), avid rock climber, and international adventurer. I’m drawn to hard problems, unfamiliar environments, and challenges that require persistence, creativity, and constant learning.`}
                   </Typography>
