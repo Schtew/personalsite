@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
-  FaLinkedin,
-  FaEnvelopeOpen,
+  FaLinkedinIn,
+  FaRegEnvelopeOpen,
   FaBars,
   FaTimes,
   FaRegImages,
@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     padding: "0 1rem",
-    gap: "20px",
+    gap: "1rem",
     "@media (max-width: 768px)": {
       width: "auto",
     },
@@ -191,12 +191,12 @@ const Header = ({ setIsHovered }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin size={24} style={{ color: "black" }} />
+              <FaLinkedinIn size={24} style={{ color: "black" }} />
             </a>
           </div>
           <div className={classes.socialIcon}>
             <a href="mailto:aidenm37@gmail.com" className={classes.link}>
-              <FaEnvelopeOpen size={24} />
+              <FaRegEnvelopeOpen size={22} />
             </a>
           </div>
         </div>
@@ -228,10 +228,10 @@ const Header = ({ setIsHovered }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin size={24} style={{ color: "black" }} />
+              <FaLinkedinIn size={24} style={{ color: "black" }} />
             </a>
             <a href="mailto:aidenm37@gmail.com" className={classes.link}>
-              <FaEnvelopeOpen size={24} />
+              <FaRegEnvelopeOpen size={24} />
             </a>
           </div>
         </div>
