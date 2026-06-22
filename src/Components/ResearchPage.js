@@ -54,7 +54,7 @@ const ResearchsPage = ({ isHovered }) => {
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
         width: "100%",
-        minHeight: "100vh",
+        minHeight: "var(--page-height)",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",

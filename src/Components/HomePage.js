@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
     width: "100%",
-    minHeight: "100vh",
+    minHeight: "var(--page-height)",
   },
   pageContent: {
     opacity: 1,

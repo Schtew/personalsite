@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --header-height: 64px;
+  /* --footer-height: 52px; */
+  --page-height: calc(100dvh - var(--header-height));
+}
+
 html,
 body,
 #root {
@@ -14,7 +20,7 @@ body,
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 h1,
@@ -38,36 +44,39 @@ code {
   width: 100%;
   background-color: #ffffff;
   z-index: 1000;
-  height: 8vh;
+  height: var(--header-height);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .content {
-  margin-top: 8vh;
+  margin-top: var(--header-height);
+  min-height: var(--page-height);
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .appShell {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
-.appFooter {
+/* .appFooter {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  min-height: var(--footer-height);
+  padding: 0 1rem;
+} */
 
 .appFooterText {
   font-family: 'Lora', serif;
   text-align: center;
-  padding: 1rem;
 }
 
 .textSecondaryList {
