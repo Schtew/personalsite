@@ -145,7 +145,6 @@ const Home = ({ isHovered }) => {
                     Hey, I'm Aiden Melone.
                   </Typography>
                   <Typography
-                    color="textSecondary"
                     sx={{ whiteSpace: "pre-line" }}
                     className={classes.profileText}
                   >
@@ -172,7 +171,7 @@ const Home = ({ isHovered }) => {
                 >
                   Resume
                 </Typography>
-                <Typography color="textSecondary">
+                <Typography>
                   <a
                     href="/Resume - Aiden Melone.pdf"
                     download="Resume - Aiden Melone.pdf"
@@ -204,10 +203,7 @@ const Home = ({ isHovered }) => {
                   >
                     Machine Learning
                   </Typography>
-                  <Typography
-                    color="textSecondary"
-                    className="textSecondaryList"
-                  >
+                  <Typography className="textSecondaryList">
                     Python (NumPy, TensorFlow, PyTorch, LangChain, Hugging Face,
                     Pandas), NoSQL (MongoDB, Firebase), MySQL
                   </Typography>
@@ -218,10 +214,7 @@ const Home = ({ isHovered }) => {
                   >
                     OOP
                   </Typography>
-                  <Typography
-                    color="textSecondary"
-                    className="textSecondaryList"
-                  >
+                  <Typography className="textSecondaryList">
                     Java, C#, Kotlin, Python
                   </Typography>
                   <Typography
@@ -231,10 +224,7 @@ const Home = ({ isHovered }) => {
                   >
                     Web Dev
                   </Typography>
-                  <Typography
-                    color="textSecondary"
-                    className="textSecondaryList"
-                  >
+                  <Typography className="textSecondaryList">
                     JavaScript (React, Node.js, Express.js), TypeScript (AWS
                     CDK), HTML, CSS, Flask
                   </Typography>
@@ -245,10 +235,7 @@ const Home = ({ isHovered }) => {
                   >
                     Tooling
                   </Typography>
-                  <Typography
-                    color="textSecondary"
-                    className="textSecondaryList"
-                  >
+                  <Typography className="textSecondaryList">
                     Git, AWS (Lambda, CDK), Google Cloud (Maps API, Firebase),
                     Postman (RESTful API testing), Linux (HiveOS)
                   </Typography>
@@ -276,7 +263,7 @@ const Home = ({ isHovered }) => {
                     "Cognitive Science",
                   ].map((course) => (
                     <ListItem key={course}>
-                      <Typography color="textSecondary">{course}</Typography>
+                      <Typography>{course}</Typography>
                     </ListItem>
                   ))}
                 </List>
