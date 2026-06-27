@@ -18,12 +18,20 @@ const ResearchsPage = ({ isHovered }) => {
             Tech's Excel program.
           </li>
           <li>
-            Organizing accross multiple domains at Georgia Tech to obtain
-            training data and domain expert advice.
+            Developed a fine-tuned RAG model to automate conversion of standard
+            college-level course materials into personalized formats for
+            individuals with cognitive disabilities, targeting a core
+            scalability bottleneck in Georgia Tech’s Excel program.
+          </li>
+          <li>
+            Addressed a 1:1 support model bottleneck- combining textbook
+            retrieval with individual student profile context to generate
+            adapted assignments, with the goal of increasing program enrollment
+            capacity.
           </li>
         </ul>
       ),
-      date: "January, 2024 - Present",
+      date: "January, 2024 - May 2024",
     },
     {
       title: "VDAT | Dr. Jennifer Kim",
@@ -40,7 +48,17 @@ const ResearchsPage = ({ isHovered }) => {
             Coordinating with Korean development team remotely to collaborate on
             front end data visulization in Vue.
           </li>
-          <li>Paper published in UIST 2023</li>
+          <li>
+            Resulting paper published in{" "}
+            <a
+              href="https://programs.sigchi.org/uist/2023/program/content/126776"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "black" }}
+            >
+              UIST 2023
+            </a>
+          </li>
         </ul>
       ),
       date: "August, 2022 - December, 2022",
