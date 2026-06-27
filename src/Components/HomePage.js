@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "0 !important",
     whiteSpace: "pre-line",
     textAlign: "left",
-    lineHeight: 1.05,
+    lineHeight: 1.15,
   },
   profileSection: {
     display: "grid",
@@ -106,7 +106,14 @@ const useStyles = makeStyles((theme) => ({
   },
   courseCard: {
     width: "100%",
-    alignItems: "center",
+  },
+  courseworkList: {
+    width: "100%",
+    textAlign: "center",
+  },
+  courseworkItem: {
+    justifyContent: "center",
+    textAlign: "center",
   },
   skillsSection: {
     display: "flex",
@@ -163,27 +170,34 @@ const Home = ({ isHovered }) => {
           </Card>
 
           <div className={classes.cardsContainer}>
-            <Card className={classes.resumeCard}>
+            <Card className={classes.courseCard}>
               <CardContent>
                 <Typography
                   variant="h5"
-                  component="h3"
+                  component="h2"
                   className={classes.heading}
                 >
-                  Resume
+                  Course Work
                 </Typography>
-                <Typography>
-                  <a
-                    href="/Resume - Aiden Melone.pdf"
-                    download="Resume - Aiden Melone.pdf"
-                  >
-                    <img
-                      src={resume}
-                      alt="resume"
-                      style={{ width: "100%", height: "auto" }}
-                    />
-                  </a>
-                </Typography>
+                <List className={classes.courseworkList}>
+                  {[
+                    "Machine Learning",
+                    "Deep Learning",
+                    "Artificial Intelligence",
+                    "Reinforcement Learning",
+                    "Automata and Complexity",
+                    "Linear Algebra",
+                    "Probability and Statistics",
+                    "Data Structures and Algorithms",
+                    "Object-Oriented Programming",
+                    "Human-Computer Interaction",
+                    "Cognitive Science",
+                  ].map((course) => (
+                    <ListItem key={course} className={classes.courseworkItem}>
+                      <Typography>{course}</Typography>
+                    </ListItem>
+                  ))}
+                </List>
               </CardContent>
             </Card>
 
@@ -246,33 +260,27 @@ const Home = ({ isHovered }) => {
               </CardContent>
             </Card>
 
-            <Card className={classes.courseCard}>
+            <Card className={classes.resumeCard}>
               <CardContent>
                 <Typography
                   variant="h5"
                   component="h3"
                   className={classes.heading}
                 >
-                  Course Work
+                  Resume
                 </Typography>
-                <List text-align="center">
-                  {[
-                    "Machine Learning",
-                    "Deep Learning",
-                    "Artificial Intelligence",
-                    "Reinforcement Learning",
-                    "Linear Algebra",
-                    "Probability and Statistics",
-                    "Data Structures and Algorithms",
-                    "Object-Oriented Programming",
-                    "Human-Computer Interaction",
-                    "Cognitive Science",
-                  ].map((course) => (
-                    <ListItem key={course}>
-                      <Typography>{course}</Typography>
-                    </ListItem>
-                  ))}
-                </List>
+                <Typography>
+                  <a
+                    href="/Resume - Aiden Melone.pdf"
+                    download="Resume - Aiden Melone.pdf"
+                  >
+                    <img
+                      src={resume}
+                      alt="resume"
+                      style={{ width: "100%", height: "auto" }}
+                    />
+                  </a>
+                </Typography>
               </CardContent>
             </Card>
           </div>
