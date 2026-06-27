@@ -7,26 +7,62 @@ import Saleo from "../Assets/saleo.png";
 const ProfessionsPage = ({ isHovered }) => {
   const professions = [
     {
+      title: "Saleo x Consensus | Full Stack Software Engineer",
+      image: Saleo,
+      description: (
+        <ul>
+          <li>
+            Architected and deployed a fully autonomous bug detection and
+            remediation system alongside one other engineer, closing the loop on
+            a QA cycle that previously depended entirely on customer-reported
+            issues reaching QA and engineering before resolution.
+          </li>
+          <li>
+            Eliminated customer-facing error exposure across 8 of the company's
+            largest and most complex accounts, catching 210 production events
+            autonomously- events that would otherwise have been discovered by
+            customers in active product sessions.
+          </li>
+          <li>
+            Built as a full production service on AWS (Lambda, ECS, DynamoDB,
+            S3, CloudFront, Secrets Manager), with dedicated frontend, backend,
+            and infrastructure repositories, and seperate active interfaces for
+            both engineering and QA teams
+          </li>
+          <li>
+            Internal AI tooling cited by company leadership as a direct
+            contributor to the company’s 13x acquisition outcome.
+          </li>
+          <li>
+            Languages/Technologies Involved: TypeScript, Claude SDK, MCP, AWS
+            (Lambda, ECS, DynamoDB, S3, CloudFront)
+          </li>
+        </ul>
+      ),
+      date: "June 2025 - Present",
+    },
+    {
       title: "Saleo | Machine Learning Engineer Contractor",
       image: Saleo,
       description: (
         <ul>
           <li>
-            Led innovation team to develop internal AI based agentic
-            applications to automate development and bug fixing workflows.
-          </li>
-          <li>
             Led R&D efforts in RAG model development for code generation, with
             an average return of 15% higher semantic quality over naïve
-            generation
+            generation.
           </li>
           <li>
-            Languages/Technologies Involved: Typescript, Python, React, AWS
-            Terraform (Sagemaker, ECs, Dynamo, etc.), Docker, Huggingface, MCP
+            Built a complete benchmarking suite for model testing and
+            deployment, enabling rigorous evaluation of generation quality
+            across varied code generation tasks.
+          </li>
+          <li>
+            Languages/Technologies Involved: AWS Sagemaker, Huggingface,
+            Langchain, OpenAI API, Typescript, Python
           </li>
         </ul>
       ),
-      date: "March 2025 - Present",
+      date: "March 2025 - June 2025",
     },
     {
       title: "Amazon | Software Development Engineer Intern",
@@ -35,12 +71,13 @@ const ProfessionsPage = ({ isHovered }) => {
       description: (
         <ul>
           <li>
-            Onboarded internal teams and built infrastructure for the customer
-            facing notification hub in the Amazon Alexa Developer Console.
+            Built infrastructure, front end components, and onboarded internal
+            teams for the customer-facing notification hub in the Amazon Alexa
+            Developer Console, coordinating across independent internal teams.
           </li>
           <li>
-            Required internal communication and coordination among various
-            independent internal teams.
+            Worked with small team of engineers to assist in Amazon's transition
+            away from on prem to event-driven AWS architecture.
           </li>
           <li>
             Technologies Involved: TypeScript, AWS (CDK, Lambda, EventBridge)
