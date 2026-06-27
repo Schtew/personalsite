@@ -202,43 +202,45 @@ const Home = ({ isHovered }) => {
                     component="h3"
                     className={classes.skillHeading}
                   >
-                    Machine Learning
+                    ML & AI Systems
                   </Typography>
                   <Typography className="textSecondaryList">
-                    Python (NumPy, TensorFlow, PyTorch, LangChain, Hugging Face,
-                    Pandas), NoSQL (MongoDB, Firebase), MySQL
+                    Python, PyTorch, TensorFlow, Hugging Face, LangChain, OpenAI
+                    API, Claude SDK, RAG, MCP, agentic workflows
                   </Typography>
                   <Typography
                     variant="h6"
                     component="h3"
                     className={classes.skillHeading}
                   >
-                    OOP
+                    Data & Evaluation
                   </Typography>
                   <Typography className="textSecondaryList">
-                    Java, C#, Kotlin, Python
+                    NumPy, Pandas, benchmarking suites, retrieval pipelines,
+                    model quality analysis, MongoDB, DynamoDB, Firebase, MySQL
                   </Typography>
                   <Typography
                     variant="h6"
                     component="h3"
                     className={classes.skillHeading}
                   >
-                    Web Dev
+                    Production Engineering
                   </Typography>
                   <Typography className="textSecondaryList">
-                    JavaScript (React, Node.js, Express.js), TypeScript (AWS
-                    CDK), HTML, CSS, Flask
+                    TypeScript, JavaScript, React, Node.js, Express.js, Flask,
+                    REST APIs, full-stack internal tools, QA automation,
+                    production monitoring
                   </Typography>
                   <Typography
                     variant="h6"
                     component="h3"
                     className={classes.skillHeading}
                   >
-                    Tooling
+                    Cloud & Infrastructure
                   </Typography>
                   <Typography className="textSecondaryList">
-                    Git, AWS (Lambda, CDK), Google Cloud (Maps API, Firebase),
-                    Postman (RESTful API testing), Linux (HiveOS)
+                    AWS SageMaker, Lambda, ECS, CDK, DynamoDB, S3, CloudFront,
+                    EventBridge, Secrets Manager, MCP, Git, Linux
                   </Typography>
                 </div>
               </CardContent>
@@ -258,6 +260,9 @@ const Home = ({ isHovered }) => {
                     "Machine Learning",
                     "Deep Learning",
                     "Artificial Intelligence",
+                    "Reinforcement Learning",
+                    "Linear Algebra",
+                    "Probability and Statistics",
                     "Data Structures and Algorithms",
                     "Object-Oriented Programming",
                     "Human-Computer Interaction",
