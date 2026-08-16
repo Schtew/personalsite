@@ -18,8 +18,8 @@ const ProfessionsPage = ({ isHovered }) => {
             issues reaching QA and engineering before resolution.
           </li>
           <li>
-            Eliminated customer-facing error exposure across 8 of the company's
-            largest and most complex accounts, catching 210 production events
+            Eliminated customer-facing error exposure across 11 of the company's
+            largest and most complex accounts, catching 467+ production events
             autonomously- events that would otherwise have been discovered by
             customers in active product sessions.
           </li>
